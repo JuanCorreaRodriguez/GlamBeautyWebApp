@@ -1,0 +1,17 @@
+<main class="mainWrapper">
+<!--  <label for="model">[(ngModel)]:</label>-->
+<!--  <input type="text" [(ngModel)]="value" id="model" >-->
+
+  <div class="signalCont">
+    <label>{{signalModel()}}</label>
+  </div>
+
+  <div class="dateCont">
+    <p>{{data$ | async }}</p>
+
+    <p>{{city | json}}</p>
+  </div>
+
+  <button mat-flat-button (click)="changeTheme()">Click me</button>
+
+</main>
